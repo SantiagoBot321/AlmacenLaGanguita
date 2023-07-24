@@ -1,10 +1,11 @@
 <?php
-
-class HomeModel {
+class HomeModel extends Query{
+ 
     public function __construct()
     {
-        // echo "Conectado";
+        parent::__construct();
     }
-}
 
+}
+ 
 ?>
