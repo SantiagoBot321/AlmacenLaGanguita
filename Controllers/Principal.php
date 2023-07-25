@@ -27,7 +27,8 @@ class Principal extends Controller
     // vista detalles
     public function detail($id_producto)
     {
-        $data['title'] = '------------------';
+       $data['producto'] =  $this->model->getProducto($id_producto);
+        $data['title'] = $data['producto']['nombre'];
         $this->views->getView('principal', "detail", $data);
     }
 
